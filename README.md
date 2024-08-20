@@ -29,8 +29,8 @@ Make sure you have the following installed:
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/MaryKenneth/nb_humor_style_classifier_app.git
-   cd nb_humor_style_classifier_app
+   git clone https://github.com/MaryKenneth/naive_bayes_humor_app.git
+   cd naive_bayes_humor_app
    ```
 
 2. **Install the Required Packages**
@@ -43,7 +43,7 @@ Make sure you have the following installed:
 
 3. **Download the Model**
 
-   Ensure you have the trained XGBoost model file (`ali_xgboost_humour_model.pkl`) in the root directory of the project.
+   Ensure you have the trained Naive Bayes model file (`naive_bayes_humor_classifier_model.pkl`) in the root directory of the project.
 
 ### Running the Application
 
@@ -64,19 +64,17 @@ The app will be available at `http://127.0.0.1:5000/` in your web browser.
 
 ## Project Structure
 
-humor_style_classifier_app/
-- app.py                           # The main Flask application file
-- templates/index.html             # HTML template for the homepage
-- ali_xgboost_humour_model.pkl   # Pre-trained XGBoost model
-- requirements.txt               # Lists all the dependencies needed to run the project
-- README.md                      # This README file
+naive_bayes_humor_app/
+- app.py                                   # The main Flask application file
+- templates/index.html                     # HTML template for the homepage
+- naive_bayes_humor_classifier_model.pkl   # Naive Bayes model
+- requirements.txt                         # Lists all the dependencies needed to run the project
+- README.md                                # This README file
 
 
 ## Technologies Used
 
 - **Flask**: For building the web application.
-- **XGBoost**: For training the humor classification model.
-- **Sentence Transformers**: For embedding the text input.
 
 ## Contributing
 
@@ -87,7 +85,4 @@ Feel free to fork this repository and submit pull requests. For major changes, p
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ## Acknowledgements
-
-- [XGBoost](https://xgboost.readthedocs.io/)
-- [Sentence Transformers](https://www.sbert.net/)
 - Flask documentation
